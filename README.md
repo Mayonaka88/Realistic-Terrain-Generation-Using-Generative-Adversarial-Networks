@@ -70,6 +70,8 @@ For more information, check out the repository of the brand-new dataset [here](h
 
 ## Prototypes and Testing
 
+The original DCGAN prototype was created using data that has not been normalized or preprocessed. This resulted in outputs that are more akin to outlines instead of detailed terrain. This is because many details and features were lost due to the lack of preprocessing. 
+
 The final DCGAN model was trained using fine-tuned preprocessed data which resulted in the preservation of the detail of terrain data. The final model was utilized to create the brand-new SynthEarth dataset.
 
 For the CRNN, many iterations were made but ultimately the model was scrapped due to undesired outputs. The output would generate the next sequence of pixels however not enough unique new data existed after every prediction which resulted in the predictions defaulting to a constant value of 0. 
